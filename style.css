@@ -1,0 +1,183 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+
+/* Bagian Navigation Bar */
+
+.fcontainer {
+    width: 100%;
+    height: 106vh;    
+    background-color:darkgray;
+    background-image: url(picture/pexels-francesco-ungaro-2835436\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color:darkcyan;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+}
+.firstname {
+    color:ghostwhite;
+    font-weight: bold;
+}
+
+.lastname {
+    color: black;
+    font-weight: 400px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a {
+    color:whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation > li > a:hover {
+    background-color:lightblue;
+    padding: 15px;
+    border-radius: 17px;
+    color:black;
+    transition: all .3s ease-in-out;
+}
+
+.active:hover {
+    color:black !important;
+    background-color: crimson !important;
+}
+
+.navigation > li > img {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navigation > li > img:hover {
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    transition: all .3s ease-in-out;
+}
+
+/* Bagian Content */
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align:center;
+}
+
+.a-content {
+    width: 750px;
+    height: 650px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color:lightblue;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 103%;
+    letter-spacing: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0C0E36;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.img-content {
+    width: 50%;
+    height: 70%;
+    border-radius: 50px;
+}
+
+/* Bagian About me */
+.descrip {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: justify;
+    width: 700px;
+    text-indent: 40px;
+    padding: 10px;
+    word-spacing: normal;
+}
+
+/* Bagian Contact Me  */
+.contact {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 103%;
+    letter-spacing: 0%;
+    margin: -20px;
+
+}
+
+.a-content > li {
+    font-size: 20px;
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    width: 400px;
+    height: 10px;
+    margin: -100px;
+    margin-bottom: -13px;
+    padding: 5px;
+}
+
+.gambar {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.gambar:hover {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+/* Bagian Footer */
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.h1-footer {
+   color: white;
+}
