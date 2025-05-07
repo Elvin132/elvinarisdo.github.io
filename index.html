@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.body.classList.add('dark-mode');
+            themeToggle.textContent = '☀️';
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            themeToggle.textContent = isDark ? '☀️' : '🌙';
+        }
+    </script>
+
+    <header>
+        <h1>Elvin Arisdo Portfolio</h1>
+        <p>Mahasiswa Prodi Bisnis Digital | Universitas Widya Dharma | Novice Programmer</p>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><img src="Picture/20230622_173844.jpg" alt="Photo Profile" /></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <div class="gif">
+            <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Programmer GIF">
+        </div>
+        <p class="text-home">Hai! Saya Elvin Arisdo, mahasiswa Bisnis Digital yang sedang mengeksplor dunia
+            pemrograman. Di website ini, kamu bisa mengenal saya lebih dalam melalui bagian About Me dan juga
+            menghubungi saya lewat Contact. Yuk, scroll ke bawah!</p>
+        <div class="tombolkeaboutme">
+            <a href="about.html" class="button">Lanjut ke About Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Elvin Arisdo. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
